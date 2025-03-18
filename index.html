@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Jumper Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="high-score">High Score: <span id="highScore">0</span></div>
+        </div>
+        
+        <div id="game-area">
+            <div id="character"></div>
+            <!-- Platforms will be generated here -->
+        </div>
+        
+        <div class="game-controls">
+            <button id="startButton">Start Game</button>
+            <div id="volumeBar">
+                <div id="volumeLevel"></div>
+            </div>
+            <div id="instructions">
+                <p>Scream or make noise to make the character jump and move forward!</p>
+                <p>Keep making noise until you reach the next safe platform.</p>
+            </div>
+        </div>
+        
+        <div id="gameOver" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Your score: <span id="finalScore">0</span></p>
+            <button id="restartButton">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
